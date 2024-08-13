@@ -1,0 +1,200 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+.home {
+    background: url(../images/pexels-leonardho-1552252.jpg) center no-repeat;
+    height: 98vh;
+    background-size:cover;
+}
+
+
+.home .header nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .header nav .nav-logo img {
+    max-width: 250px;
+}
+
+.home .header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+}
+
+.home .header ul .link a {
+    position: relative;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height:5px;
+    top: 1.5rem;
+    width: 0;
+    left: 0;
+    background-color: rgb(200, 97, 53);
+    transition: all 3s ease;
+}
+
+.link a:hover::after {
+    cursor:pointer;    
+    width: 70%;
+} 
+
+.home .header button {
+    width: 170px;
+    padding: 10px;
+    background-color: rgb(200, 97, 53);
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 20px;
+}
+
+
+.home h1 {
+    color: #ccc;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+}
+
+.sobre {
+    color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px rgb(200, 97, 53);
+}
+
+.sobre .sobre-mim h4{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.sobre .sobre-mim h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.sobre .sobre-mim h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.sobre .sobre-mim p {
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.sobre .sobre-mim .btn-sobre {
+    width: 170px;
+    padding: 10px;
+    background-color: rgb(200, 97, 53);
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.sobre .img-personal img {
+    max-width: 500px;
+    position: relative;
+}
+
+.servicos {
+    height: 70vh;
+    position: relative;
+}
+
+.servicos h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+ 
+
+.servicos .container-cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.servicos .container-cards .card {
+    border-radius: 10px;
+    border: 1px solid rgb(200, 97, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos .container-cards .card img {
+    margin-top: 1rem;
+    width: 80px;
+}
+
+.servicos .container-cards .card h3{
+    color: #ccc;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.servicos .container-cards .card p {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 70%;
+    margin-bottom: 2rem;
+}
+
+.servicos .blur-services {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px rgb(200, 97, 53);
+    right: 20%;
+}
+
+.contacts {
+    height: 20vh;
+    background-color: rgb(141, 70, 40);
+}
+
+.contacts ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+}
